@@ -3,8 +3,12 @@ const cors =require("cors");
 const morgan=require("morgan");
 const dotenv =require("dotenv");
 const colors=require("colors");
+const connectDb=require("./config/connectDb")
 // config dot env file
 dotenv.config()
+
+// datebase call 
+connectDb();
 
 // rest object
 const app =express()  
@@ -22,7 +26,7 @@ app.get('/',(req,res)=>{
 })
 
 // port 
-const PORT =8080    || process.env.PORT
+const PORT =  8080 ||  process.env.PORT  ;
 
 //listen server
 app.listen(PORT,()=>{

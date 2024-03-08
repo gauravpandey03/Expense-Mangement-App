@@ -11,6 +11,7 @@
   "author": "Project 21",
   "license": "ISC",
   "dependencies": {
+    "antd": "^5.16.1",
     "colors": "^1.4.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.4",

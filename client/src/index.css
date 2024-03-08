@@ -7,3 +7,15 @@
 .content {
   height: 80vh;
 }
+
+.navbar{
+  background-color:gray!important;
+}
+
+.register-page{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  
+}

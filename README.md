@@ -5,4 +5,4 @@
 
 
    <!-- Ant Design third party libary for locking  and registration -->
-   npm start 
+   npm start // inside client folder

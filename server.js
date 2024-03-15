@@ -20,10 +20,15 @@ app.use(morgan('dev'))
 app.use(express.json())
 app.use(cors())
 
+// routes
+//main user routes
 
-app.get('/',(req,res)=>{
-    res.send("<h1>hello form server</h1>")
-})
+app.use('/api/v1/users',require("./routes/userRoute"));
+
+
+// app.get('/',(req,res)=>{
+//     res.send("<h1>hello form server</h1>")
+// })
 
 // port 
 const PORT =  8080 ||  process.env.PORT  ;

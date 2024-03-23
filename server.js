@@ -24,7 +24,8 @@ app.use(cors())
 //main user routes
 
 app.use('/api/v1/users',require("./routes/userRoute"));
-
+// transection routes 
+app.use('/api/v1/transections',require("./routes/transectionRoutes"));
 
 // app.get('/',(req,res)=>{
 //     res.send("<h1>hello form server</h1>")

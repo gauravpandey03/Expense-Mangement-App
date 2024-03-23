@@ -1,11 +1,11 @@
-import React ,{useState}from 'react'
+import React ,{useState,useEffect}from 'react'
 //import Layout from './../components/Layout/Layout';
 import {Form ,Input,message} from 'antd';
 //import { useState } from 'react';
 import { Link,useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import Password from 'antd/es/input/Password';
-import Spinner from '../components/Layout/spinner';
+import Spinner from '../components/Layout/Spinner';
 
 const Login=()=>{
     const [loading , setLoading]=useState(false);
@@ -19,7 +19,7 @@ const Login=()=>{
            const {data} = await axios.post("/users/login",values);
            message.success('Login  Successful');
            setLoading(false);
-           localStorage.setItem('user',JSON.stringify({...data,password:''}))
+           localStorage.setItem('user',JSON.stringify({...data.user,password:''}))
            navigate('/');
            }catch(error){
             setLoading(false);
@@ -28,6 +28,13 @@ const Login=()=>{
 
 
     };
+
+    // prevent from user if already login..
+useEffect(()=>{
+    if(localStorage.getItem('user')){
+        navigate('/')
+    }
+},[navigate]);
 
     return (
         <>

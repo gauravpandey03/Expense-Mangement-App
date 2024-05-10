@@ -104,8 +104,8 @@
 .register-page .ant-form-item-label,
 .login-page .ant-form-item-label {
   color: gray; /* Change label color */
-  font-size: 20px; /* Change label font size */
-  font-weight: bold; /* Make the label bold */
+  font-size: 20px ;  /* Change label font size */
+  font-weight: bold ; /* Make the label bold */
 }
 
 
@@ -124,7 +124,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 90vh;
+  height: 100vh;
 
 
   background-image: url('./background_1.jpg');

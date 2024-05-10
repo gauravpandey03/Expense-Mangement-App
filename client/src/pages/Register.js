@@ -33,7 +33,7 @@ const Register = () => {
       <div className="resgister-page ">
         {loading && <Spinner />}
         <Form layout="vertical" onFinish={submitHandler}>
-          <h1>Register Form</h1>
+          <h1>Register  </h1>
           <Form.Item label="Name" name="name">
             <Input />
           </Form.Item>

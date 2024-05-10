@@ -1,3 +1,115 @@
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.content {
+  height: 100vh;
+}
+
+.register-page,
+.login-page {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0; /* Remove any margin */
+  padding: 0; /* Remove any padding */
+  overflow: hidden; /* Ensure overflow is hidden to prevent any unexpected overflow */
+  background-image: url('./background_1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.register-page form,
+.login-page form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 400px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.register-page h1,
+.login-page h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: black;
+  font-size: 24px; /* Adjust font size */
+  font-weight: bold; /* Make it bold */
+}
+
+.register-page .ant-form-item,
+.login-page .ant-form-item {
+  margin-bottom: 20px;
+}
+
+.register-page .ant-btn-primary,
+.login-page .ant-btn-primary {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #ff6f61;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-page .ant-btn-primary:hover,
+.login-page .ant-btn-primary:hover {
+  background-color: #e65042;
+}
+
+.register-page .d-flex,
+.login-page .d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.register-page .d-flex a,
+.login-page .d-flex a {
+  color: blue;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.register-page .d-flex a:hover,
+.login-page .d-flex a:hover {
+  color: #096dd9;
+}
+
+.register-page .ant-input,
+.login-page .ant-input {
+  opacity: 0.7; /* Adjust the opacity value as needed */
+  font-weight: bold; /* Make the text bold */
+  font-size: 16px; /* Adjust the font size as needed */
+}
+
+.register-page .ant-form-item-label,
+.login-page .ant-form-item-label {
+  color: gray; /* Change label color */
+  font-size: 20px; /* Change label font size */
+  font-weight: bold; /* Make the label bold */
+}
+
+
+
 * {
   padding: 0;
   margin: 0;
@@ -13,6 +125,13 @@
   align-items: center;
   justify-content: center;
   height: 90vh;
+
+
+  background-image: url('./background_1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
 }
 
 /* transection page */
@@ -44,3 +163,17 @@
 .inactive-icon {
   color: gray;
 }
+
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #343a40; /* adjust as per your design */
+  color: white; /* adjust text color as needed */
+  padding: 10px 0; /* adjust padding as needed */
+  text-align: center; /* center the text */
+}
+
+
+

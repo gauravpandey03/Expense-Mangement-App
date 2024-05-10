@@ -104,7 +104,7 @@ const HomePage = () => {
     } catch (error) {
       setLoading(false);
       console.log(error);
-      message.error("unable to delete");
+      message.error("Unable to delete");
     }
   };
 
@@ -257,3 +257,7 @@ const HomePage = () => {
 };
 
 export default HomePage;
+
+
+
+
